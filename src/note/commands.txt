@@ -1,4 +1,6 @@
 for install bootstrap locally
   npm install --save bootstrap@3
 
+after install bootstrap  we need to add that as dependency of angular.json file styles array
+
 
