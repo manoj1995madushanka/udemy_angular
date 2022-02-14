@@ -1,4 +1,68 @@
+TS is superset to JS
 typescript of special kind of javascript
 TS provides interface,classes and strong typing means data types to JS
 TS is compiled to JS
+
+example
+function add(a:number,b:number){
+return a+b;
+}
+========================
+for install typescript locally
+  npm install typescript
+========================
+for install typescript globally
+  npm install -g typescript
+========================
+for compile TS to JS file
+  npx tsc filename.ts
+========================
+TS primitives : number,string,boolean
+========================
+TS union types
+  course: string:number='test'
+========================
+TS custom types
+  type Person = {
+    name:string;
+    age:number
+  }
+========================
+TS generics
+
+function insertAtBeginning(array:any[],value:any){
+  const newArray = [value,...array];
+  return newArray;
+}
+
+const updatedArray = insertAtBeginning([1,2,3],-1); // output will be [-1,1,2,3]
+
+function insertAtBeginning<T>(array:T[],value:T){
+  const newArray = [value,...array];
+  return newArray;
+}
+
+========================
+TS class
+
+class Student {
+  name:string;
+  age:number;
+  private courses:string[];
+
+  constructor(name:string,age:number,courses:string[]){
+    this.name=name;
+    this.age=age;
+    this.courses=courses;
+  }
+
+  listCourses()
+  {
+    return this.courses.slice(); // here slice method used to return duplicate list of courses
+  }
+}
+
+
+
+
 
