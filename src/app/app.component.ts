@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'manoj madushanka';
+
+  allowServer: boolean = false;
+
+  /**
+   * after 2 seconds allowserver is true
+   * */
+  constructor() {
+    setTimeout(() => {
+      this.allowServer = true;
+    }, 200)
+  }
 }
