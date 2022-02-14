@@ -1,0 +1,4 @@
+typescript of special kind of javascript
+TS provides interface,classes and strong typing means data types to JS
+TS is compiled to JS
+
