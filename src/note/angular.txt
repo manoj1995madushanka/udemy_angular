@@ -1,0 +1,2 @@
+angular app starts from main.ts file
+
