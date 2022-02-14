@@ -10,6 +10,7 @@ export class AppComponent {
 
   allowServer: boolean = false;
   serverCreationStatus: string = 'no server created yet';
+  serverName: string = '';
 
   /**
    * after 2 seconds allowserver is true
@@ -20,8 +21,11 @@ export class AppComponent {
     }, 200)
   }
 
-  onCreateServer()
-  {
+  onCreateServer() {
     this.serverCreationStatus = 'server was created';
+  }
+
+  onUpdateServerName($event: Event) {
+    this.serverName = (<HTMLInputElement>$event.target).value;
   }
 }

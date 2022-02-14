@@ -5,6 +5,11 @@
 {{allowServer}}
 <br>
 {{serverCreationStatus}}
+
+<br>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<p>created server name is {{serverName}}</p>
+
 <hr>
 {{name}}
 <app-server></app-server>
