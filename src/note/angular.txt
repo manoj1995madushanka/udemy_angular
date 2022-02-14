@@ -1,2 +1,4 @@
 angular app starts from main.ts file
 
+Data Binding
+  String interpolation {{property}}
