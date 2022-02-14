@@ -83,6 +83,10 @@ max={
   }
 }
 
+===========================
+TS interfaces and types
+  interfaces can be implemented by classes
+
 
 
 
