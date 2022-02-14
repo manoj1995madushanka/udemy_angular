@@ -1,8 +1,8 @@
 <input type="text" [(ngModel)]="name">
 <br>
 <!--property binding-->
-<button class="btn btn-primary" [disabled]="allowServer">Add</button>
-
+<button class="btn btn-primary" [disabled]="!allowServer">Add</button>
+{{allowServer}}
 <hr>
 {{name}}
 <app-server></app-server>
