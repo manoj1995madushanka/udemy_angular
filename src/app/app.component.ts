@@ -14,6 +14,9 @@ export class AppComponent {
   serverCreated = false;
   serverStatus: string;
 
+  servers = ['server 1','server 2']
+  serverNumber = 3;
+
   /**
    * after 2 seconds allowserver is true
    * */
@@ -31,6 +34,8 @@ export class AppComponent {
    * */
   onCreateServer() {
     this.serverCreated = true;
+    this.servers.push('server '+ this.serverNumber);
+    this.serverNumber++;
     this.serverCreationStatus = 'server was created';
   }
 
