@@ -10,3 +10,6 @@ should yield nice results.
 
 
 directives are instructions in the DOM
+directives are two types
+  structural directives : add or remove element to DOM (ng-if)
+  attribute directives : they only change element they were placed on (ng-style)

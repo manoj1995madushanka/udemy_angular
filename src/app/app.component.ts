@@ -12,6 +12,7 @@ export class AppComponent {
   serverCreationStatus: string = 'no server created yet';
   serverName: string = 'test';
   serverCreated=false;
+  serverStatus : string;
 
   /**
    * after 2 seconds allowserver is true
@@ -20,6 +21,9 @@ export class AppComponent {
     setTimeout(() => {
       this.allowServer = true;
     }, 200)
+
+    // math.random generate random number within 0-1 range
+    this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
   }
 
   onCreateServer() {
