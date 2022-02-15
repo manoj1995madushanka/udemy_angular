@@ -11,6 +11,7 @@ export class AppComponent {
   allowServer: boolean = false;
   serverCreationStatus: string = 'no server created yet';
   serverName: string = 'test';
+  serverCreated=false;
 
   /**
    * after 2 seconds allowserver is true
@@ -22,6 +23,7 @@ export class AppComponent {
   }
 
   onCreateServer() {
+    this.serverCreated=true;
     this.serverCreationStatus = 'server was created';
   }
 
