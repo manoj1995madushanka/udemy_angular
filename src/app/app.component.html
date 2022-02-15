@@ -8,7 +8,12 @@
 
 <br>
 <input type="text" class="form-control" (input)="onUpdateServerName($event)">
-<p [ngStyle]="{backgroundColor : getColor()}">created server name is {{serverName}} and it is {{serverStatus}}</p>
+
+<!-- ngClass takes js object contain online css class and it's applies logic-->
+<p
+  [ngStyle]="{backgroundColor : getColor()}"
+  [ngClass]="{online:serverStatus==='online'}"
+>created server name is {{serverName}} and it is {{serverStatus}}</p>
 
 <br>
 <input type="text" class="form-control" [(ngModel)]="serverName">
