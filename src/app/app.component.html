@@ -8,7 +8,7 @@
 
 <br>
 <input type="text" class="form-control" (input)="onUpdateServerName($event)">
-<p>created server name is {{serverName}}</p>
+<p [ngStyle]="{backgroundColor : getColor()}">created server name is {{serverName}} and it is {{serverStatus}}</p>
 
 <br>
 <input type="text" class="form-control" [(ngModel)]="serverName">

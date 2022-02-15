@@ -11,8 +11,8 @@ export class AppComponent {
   allowServer: boolean = false;
   serverCreationStatus: string = 'no server created yet';
   serverName: string = 'test';
-  serverCreated=false;
-  serverStatus : string;
+  serverCreated = false;
+  serverStatus: string;
 
   /**
    * after 2 seconds allowserver is true
@@ -26,12 +26,25 @@ export class AppComponent {
     this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
   }
 
+  /**
+   * click event method
+   * */
   onCreateServer() {
-    this.serverCreated=true;
+    this.serverCreated = true;
     this.serverCreationStatus = 'server was created';
   }
 
+  /**
+   * event binding with parameter
+   * */
   onUpdateServerName($event: Event) {
     this.serverName = (<HTMLInputElement>$event.target).value;
+  }
+
+  /**
+   * return color of server status
+   * */
+  getColor() {
+    return this.serverStatus === 'online' ? 'green' : 'red';
   }
 }
