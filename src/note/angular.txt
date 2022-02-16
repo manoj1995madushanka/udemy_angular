@@ -26,6 +26,7 @@ Instead of:
 use
 
 @ViewChild('serverContentInput', {static: true}) serverContentInput: ElementRef;
+
 The same change (add { static: true } as a second argument) needs to be applied to
  ALL usages of @ViewChild() (and also @ContentChild() which you'll learn about later)
  IF you plan on accessing the selected element inside of ngOnInit().
@@ -37,5 +38,7 @@ If you're using Angular 9+, you only need to add { static: true } (if needed) bu
 
 ===========================================================================================
 
+ngOnInit runs after the constructor
 
+we can use also @ContentChild for @ViewChild
 
