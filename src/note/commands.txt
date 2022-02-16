@@ -8,3 +8,10 @@ create app with no strict mode
 
 create component without test file
   ng g c componentName --skipTests true
+
+
+@Input() used to parent to child data communicate
+@Output() used to child to parent data pass
+
+for @Output() we need event to trigger
+
