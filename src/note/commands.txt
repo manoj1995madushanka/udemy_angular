@@ -15,3 +15,5 @@ create component without test file
 
 for @Output() we need event to trigger
 
+for complex scenarios we use services to pass data within components
+
