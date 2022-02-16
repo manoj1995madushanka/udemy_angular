@@ -17,3 +17,5 @@ for @Output() we need event to trigger
 
 for complex scenarios we use services to pass data within components
 
+angular has style encapsulate feature that means we can define style for one component
+only rather that other places that uses same class or id
